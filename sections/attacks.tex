@@ -1,0 +1,84 @@
+%Was sind Netzwerk Attacken und in welchen Umgebungen werden sie eingesetzt? Wie gefährlich sind sie? Wie oft passieren solche Attacken?%
+\subsection{Grundlagen}
+Bei einem Netzwerkangriff versucht eine Fremde Person Remote Zugriff auf den Computer einer Person zu erlangen und so der angegriffenen Person zu Schaden, oder in anderen Fällen ihr zu helfen \cite{ref_article1}. Auch wenn man einen Netzwerkangriff zunächst als etwas schlechtes ansieht, sollte man verstehen, dass manche uns helfen, unsere Systeme gegen richtige Hacking Angriffe sogar zu stärken. 
+Deshalb unterscheidet man generell unter zwei Arten von Hacking: Ethical und Unethical Hacking. \par
+Beim Ethical Hacking, bricht man in einen Computer ohne jegliche Böse Absicht ein und versucht Sicherheitslücken zu finden, um diese dann an die Personen weiterzuleiten, die diese Information benötigen \cite{ref_article1}. Ein berühmtes Beispiel für so einen Fall ist z.B. Google, welche 2020 knapp 6.5 Millionen Dollar an Hacker gezahlt hat, weil diese Sicherheitslücken gefunden hatte, welche Goggle daraufhin schließen konnte \cite{ref_url1}. \par
+Im Gegensatz dazu steht Unethical Hacking. Dabei geht es darum, in Computer Systeme einzubrechen, ohne sich das Einverständnis einer Person geholt zu haben. Meistens geht dies mit Bösen absichten einher und mit dem entsprechenden System Schaden anzurichten, wie z.B. Identitätsdiebstahl \cite{ref_article1}. \par
+Gerade heutzutage, wo jeder in irgendeiner Form mit dem Netz verbunden ist, gibt es viele Angriffe von Menschen, die Schaden mit ihren Hacking Versuchen anrichten wollen. Man kann sagen, dass jeden Tag ungefähr 30.000 Websiten gehackt werden, wobei gerade kleinere Websites davon betroffen sind \cite{ref_url2}. 2007 fand die University of Maryland heraus, dass es ungefähr alle 39 Sekunden einen Hacking Angriff gibt \cite{ref_url3}.\par
+Wie gefährlich können solche Hacking Angriffe aber werden? Jeder hat bestimmt schon mal eine merkwürdige E-Mail oder SMS bekommen. Fast wöchentlich kursiert ein neuer Trend, die Hacker sich Zugriff auf die Daten der benutzen nehmen wollen. Wenn diese Hacker Zugriff auf das System bekommen, kann dieser sämtliche Daten klauen: z.B. Passwörter für wichtige Accounts (Bankaccount, Paypal, etc.) oder er verschlüsselt das System, sodass die Person nicht mehr an ihre Dokumente kommt, solange kein Lösegeld gezahlt wurde. \par
+Im Internationalen Raum gab es jedoch auch Hacking Angriffe, die sich teilweise sogar gegen ganze Länder gerichtet hat. Ein Beispiel dafür, waren die Stromausfälle in der Ukraine 2015/2016. Unter der Hacking Gruppe 'Sandworm', griff Russland die Ukraine an zwei Tagen an. Dies führte zu Landesweiten Stromausfällen. Ein noch größerer Angriff von derselben Russischen Hacker Gruppe, der sich ursprünglich auch nur gegen die Ukraine richten sollte, gerieht jedoch außer Kontrolle und legte mehrere wichtige Organe auf der ganzen Welt lahm. Diese Malware war NotPetya und verursachte ungefähr 10 Milliarden Dollar an schäden auf der ganzen Welt. Betroffen davon waren einige der größten Pharmazeutischen Unternehmen, Energieversorger, Flughäfen etc. \cite{ref_url4}. \par
+Damit zeigt sich wie gefährlich Angriffe auf unsere Netzwerke sein können, da sie unsere komplette Netzwerkstruktur zum erliegen bringen können, wenn wir uns nicht gegen diese schützen.
+
+\subsection{Einsetzbare Tools}
+\subsubsection{Virtual Box:}
+Virtual Box ist ein Virtualisierungsprodukt. Es ermöglicht mehrere virtuelle Maschinen (VM) für z.B. Penetrationtesting gleichzeitig auf einem Rechner laufen zu lassen.\cite{ref_url5}\par
+
+\subsubsection{Kali VM:}
+Die Kali VM ist eine Penetrationstest-Distribution, welches alle nötigen Tools enthält, die für einen Angriff auf ein Zielsystem benötigt werden. Der Vorteil einer solchen Distribution ist, dass kein eigener Computer für ein solchen Test mitgenommen werden muss. Auf dieser Art wird der Host nicht mit dem Zielsystem direkt Kontakt haben.\cite{ref_url6}\par
+
+\subsubsection{Nmap:}
+Nmap ist eine Open-Source-Werkzeug, das bei Netzwerkanalysen und Sicherheitsüberprüfungen zum Einsatz kommt. Entworfen wurde dies, um große Netzwerke schnell einzuscannen. Mit einem Scan ist es möglich, offene Ports sowie Anwendungen und Dienste, die auf diesen Port lauschen bzw. senden zu identifizieren. Außerdem ist es auch mit dem aggressiven Mode möglich MAC Adressen, installiertes Betriebssystem sowie Informationen zu den Versionen zu ermitteln.\cite{ref_url7}\par
+
+\subsubsection{Wireshark:}
+Wireshark ist der weltweit führende und am weitesten verbreitete Netzwerkprotokollanalysator. Es ermöglicht Ihnen, auf mikroskopischer Ebene zu sehen, was in Ihrem Netzwerk passiert, und ist de facto (und oft de jure) Standard in vielen kommerziellen und gemeinnützigen Unternehmen, Regierungsbehörden und Bildungseinrichtungen.\cite{ref_url8}\par
+
+\subsubsection{Low Orbit Ion Cannon (LOIC):}
+LOIC ist eine Open-Source-Belastungstest-anwendung. Sie ermöglicht über eine benutzerfreundliche WYSIWYG-Schnittstelle sowohl Angriffe auf den TCP- als auch auf den UDP-Protokoll-Layer. Aufgrund der Popularität des ursprünglichen Tools wurden verbesserte Modelle entwickelt, mit welchen die Angriffe über einen Webbrowser gestartet werden können.\cite{ref_url9}\par
+
+\subsubsection{High Orbit Ion Cannon (HOIC):}
+Dieses Angriffstool wurde entwickelt, um den LOIC mit erweiterten Fähigkeiten und zusätzlichen Anpassungsmöglichkeiten zu ersetzen. Durch die Verwendung des HTTP-Protokolls kann HOIC gezielte Angriffe starten, die schwer abzuwehren sind. Die Software ist so konzipiert, dass mindestens 50 Personen in einem koordinierten Angriff zusammenarbeiten.\cite{ref_url9}\par
+
+\subsubsection{Slowloris:}
+Slowloris ist eine Anwendung, die dafür konzipiert wurde, einen Low-and-Slow-Angriff auf einen Zielserver zu initiieren. Sie braucht nur eine relativ begrenzte Menge an Ressourcen, um eine schädliche Wirkung zu erzielen.\cite{ref_url9}\par
+
+\subsubsection{R.U.D.Y (R-U-Dead-Yet):}
+R.U.D.Y. ist ein weiteres Low-and-Slow-Angriffstool, das so konzipiert ist, dass der Benutzer Angriffe leicht mit einem einfachen Point-and-Click-Interface starten kann. Durch das Öffnen mehrerer HTTP-POST-Anfragen und das anschließende Offenhalten dieser Verbindungen über den längstmöglichen Zeitraum zielt der Angriff darauf ab, den Zielserver langsam zu überfordern.\cite{ref_url9}\par
+
+\subsubsection{Ettercap:}
+Ettercap ist ein Open-Source-Netzwerk-Traffic-Analysator und -Interceptor. Das umfassende MITM-Angriffstool ermöglicht es Forschern, eine Vielzahl von Netzwerkprotokollen und Hosts zu analysieren und zu analysieren. Es kann auch die Netzwerkpakete in einem LAN und anderen Umgebungen registrieren. Darüber hinaus kann der vielseitige Netzwerk-Traffic-Analyzer Man-in-the-Middle-Angriffe erkennen und stoppen.\cite{ref_url10}\par
+
+\subsubsection{Burp:}
+Burp ist ein automatisiertes und skalierbares Tool zum Scannen von Sicherheitslücken. Das Tool ist für viele Sicherheitsexperten eine gute Wahl. Im Allgemeinen ermöglicht es den Forschern, Webanwendungen zu testen und Schwachstellen zu identifizieren, die Kriminelle ausnutzen und MITM-Angriffe starten können. Es verwendet einen benutzergesteuerten Workflow, um einen direkten Einblick in die Zielanwendung und deren Funktionsweise zu erhalten. Burp fungiert als Web-Proxy-Server und fungiert als Man-in-the-Middle zwischen dem Webbrowser und den Zielservern. Somit können Sie den Anfrage- und Antwortverkehr abfangen, analysieren und ändern.\cite{ref_url10}\par
+
+\subsection{Ansätze für einen Angriff}
+Es gibt verschiedene Art wie man einen Netzwerkangriff durchführen kann, aber im voraus werden Vorbereitungen getroffen, damit man bestimmte Informationen über sein Ziel hat und dieses leichter angreifen kann. Drei dieser Methoden zur Informationsbeschaffung heißen Footprinting, Port Scanning und Enumeration.
+
+\subsubsection{Footprinting}
+
+
+
+\subsubsection{Port Scanning}
+
+
+
+\subsubsection{Enumeration}
+
+\subsection{Man-in-the-Middle-Attacke (MitM-Attacke)}
+Die Kommunikation im Netzwerk zwischen zwei Hosts kann durch einen Angreifer gestört werden. Mögliche Störungen sind das Abfangen und/oder Manipulieren von Nachrichten, vortäuschen einer falschen Identität sowie die Unterbrechung der Kommunikation.\cite{ref_book_attack_1} \par
+
+\subsubsection{ARP-Spoofing:}
+Ein Host möchte die MAC Adresse von einem anderen Host erhalten. Der Host sendet einen ARP-Request an dem anderen Host. Ein ARP-Request beinhaltet folgende Informationen: Quell- IP-Adresse und MAC-Adresse sowie Ziel IP-Adresse. Normalerweise müsste in diesem Moment der angefragte Host antworten, was er auch tut, aber davor wird der Angreifer antworten und teilt mit dem ARP-Response seine eigene MAC-Adresse mit. Somit wird der ARP-Response von dem anderen Host beim anfragenden Host ignoriert bzw. verworfen. Nun muss der Angreifer das gleiche mit dem anderen Host durchführen und dann denken das beide host direkt kommunizieren aber die Segmente werden zuerst an den Angreifer gesendet, der die Kommunikation mitbekommt, sogar auch manipulieren und verwerfen kann. Anschließend leitet er die TCP/IP Segmente weiter.\cite{ref_book_attack_4} \par
+
+\subsubsection{ARP-Cache-Flooding:}
+Anders als beim ARP Spoofing kontrolliert der Angreifer die Kommunikation zwischen zwei Hosts nicht jedoch hat er die Möglichkeit, die TCP/IP Segmente abzuhören. Die Aufgabe besteht darin, den ARP-Cache mittels sehr vielen ARP-Replies zu fluten. Ein Switch kann mithilfe von ARP-Caches MAC-Adressen Ports zuordnen. Ist der ARP-Cache voll, dann arbeitet der Switch wie ein Hub der die ganzen ARP-Replies an alle Ports weiterleitet.\cite{ref_book_attack_5} \par
+
+\subsubsection{DNS-Spoofing:}
+Ein DNS Spoofing Angriff richtet sich an die DNS-Server. Dabei teilt der Angreifer dem DNS-Server mit, das gewisse Namen auf IP-Adressen aufgelöst werden, die der Angreifer kontrolliert. Diese Informationen werden dann im DNS-Server abgespeichert. Wenn ein potenzielles Opfer System eine Namenauflösung für die gewisse Webseite braucht, bekommt er diese auch jedoch landet er auf der Webseite des Angreifers, der dann z.B. mit einer Anmeldeaufforderung seine Benutzerinformationen den Angreifer offenbart.\cite{ref_book_attack_6} \par
+
+\subsection{Denial of Service (DoS)}
+\subsubsection{Angriffsziele:}
+Die meisten Angriffe verfolgen das Ziel sensible Daten zu erlangen, löschen oder die Datenübertragungen zu manipulieren. Ein Denial-of-Service-Angriff (DoS-Angriff) ist ein Angriff auf die Verfügbarkeit eines Systems oder der darauf laufenden Dienstes. Das Ziel ist also ein Ausfall oder eine zeitlich begrenzte Störung des Systems bzw. des darauf laufenden Dienstes hinzuarbeiten. Die Wirkung davon ist, das autorisierte Benutzer des Systems oder des darauf laufenden Dienstes nur eingeschränkt oder auch gar nicht Zugriff haben. DoS-Angriffe können mehrere Absichten verfolgen: 
+\begin{itemize}
+    \item \textbf{Bandbreitensättigung:} Netzwerk oder Netzwerkkomponenten werden überlastet
+    \item \textbf{Ressourcensättigung:} Rechner (z.B. Server) werden überlastet
+    \item \textbf{Herbeiführen von System- und Anwendungsabstürzen:} Ausnutzung einer Schwachstelle, die zum Absturz führt. Bsp.: Ping of Death
+\end{itemize}\cite{ref_book_attack_2}\par
+
+\subsubsection{Angriffsarten:}
+Dem Angriff sind keine grenzen gesetzt. Die Durchführung kann zwar nach der gleichen Logik aber mit verschiedenen unter Ausnutzung von Protokollen erfolgen. Im Folgenden werden ein Paar von denen erläutert.\par
+
+\subsubsection{SYN-Flooding-Attacke:}
+Dieser Angriff nutzt die Schwachstelle des TCP Netzwerkprotokolls, indem es eine Überlastsituation erzeugt, welches dem Opfer System zur Ausschöpfung der Ressourcen führt. Der Angreifer missbraucht den TCP Handshake Mechanismus. Er sendet ein TCP Segment mit dem SYN-Flag gesetzt an seinem Opfer. Das Opfer antwortet mit einem TCP Segment und setzt den SYN-ACK-Flag. Der Angriff erfolgt nun in diesem Moment bzw. der Angreifer antwortet nicht. Das Opfer versucht mehrere TCP Segmente mit SYN-ACK-Flag an dem Angreifer zu senden, bis es durch ein Timeout unterbrochen wird. Ein Angreifer sendet sehr viele Anfragen mit sehr vielen gefälschten IP Adressen und antwortet schließlich nicht um den Verbindungsaufbau zu beenden. Dadurch werden Ressourcen erschöpft, sodass das Opfersystem nicht andere Anfragen annehmen kann und somit der Dienst ausfällt.\cite{ref_book_attack_3}\par
+
+\subsubsection{Distributed Denial of Service Attacke (DDoS):}
+Während bei normalen DoS mit gefälschten IP-Adressen der Angriff erfolgt, wird mit dem Distributed Denial of Service (DDoS) ein Botnetz benutzt. Ein Botnetz ist eine Menge aus fremden Rechnern, die durch eine Malware kompromittiert wurden. Damit die Rechner zentral ferngesteuert werden können, wird meistens Internet Relay Chat (IRC) verwendet. Die Bot Programme werden aktiviert und verbinden sich mit dem IRC Server. Der IRC Server hat die Funktion einer Relaisstation. Die Fernsteuerung erfolgt durch den Administrator des IRC Servers. Der Angreifer sendet Kommandos, die an das Botnetz zentral weitergeleitet werden. Dadurch erfolgt die massenhafte SYN Flooding Attacke. Der Angreifer benutzt die Bandbreite der kompromittierten Rechner, um den Angriff durchzuführen.\cite{ref_book_attack_7}\par

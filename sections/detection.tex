@@ -1,0 +1,19 @@
+\subsection{Intrusion Detection Systems / Intrusion Prevention Systems}
+Datensicherheit beschreibt eine Herangehensweise, das in erster Linie das Ziel verfolgt, ein System gegen vielzählige Verstöße. Dies ist in den meisten Fällen jedoch nur schwer möglich, da die Systeme sehr komplex sein können. So gut wie jedes System weißt irgendwelche Sicherheitsschwachstellen auf welche zu schwerläufigen Problemen führen können.
+Als Antwort auf diese Sicherheitsprobleme, die die Funktionsweise des Systems beinträchtigen können, etablierte sich eine neue Vorangehensweise. Die sogenanten Intrusion Detection Systems.
+IDS überwachen Systeme auf eventuelle Sicherheitsverstöße und automatisieren die Analyseprozesse von Ereignisse, um eventuelle Sicherheitsprobleme aufdecken zu können.\cite{haystack_ids}
+Grundsätzlich können Intrusion Detection Systems in 2 Hauptkategorien eingeteilt werden. Host-based und Network-based IDS.\cite{IDS_1}
+
+\subsection{Host-based IDS}
+Hoste-based IDS setzen den Fokus auf die Aktivitäten eines einzigen Hosts. Das IDS beschützt diesen Hosts, indem es durch die Analyse der Audit-Trails (Werkzeug der Qualitätssicherung) oder der Systemprotokolle, die vom Host-System erstellt wurden. \cite{IDS_1}
+
+\subsection{Network-based IDS}
+Network-based IDS hingegen analisieren Packete die direkt vom Netzwerk empfangen wurden. Durch das einsetzen von sogenannten Netzwerkkarten kann ein N-IDS den Netzwerkverkehr überwachen und somit alle Hosts schützen, die mit diesem Netzwerk verbunden sind.\cite{IDS_1}
+
+\subsection{Inline Sensoren}
+Ein Inline-Sensor wird in das Netzwerksegment eingeführt um den Verkehr zu überwachen. Jeglicher Verkehr muss diesen Sensor passieren. Mit Inline-Sensnoren können Attacken blockiert werden sobald sie aufgespürt wurden. In so einem Fall führt das System gleichzeitig eine Intrusion Detection und eine Intrusion Prevention durch\cite{url_sensors}
+
+\subsection{Passive Sensoren}
+Normalerweise werden im Allgemeinen meist passive Sensoren genutzt. Im Gegensatz zu Inline-Sensoren überwachen diese nicht direkt den Netzwerk-Verkehr, sondern nur eine Kopie davon. Der eigentliche Verkehr passiert diesen Sensor nicht. Diese Vorgehen ist insgesamt effizienter als das von Inline-Sensoren, da hier kein zusätzlicher Bearbeitungsschritt hinzugefügt wird, der zur Paketverzögerung beiträgt.\cite{url_sensors}
+
+\section{Eventuell Snort}
