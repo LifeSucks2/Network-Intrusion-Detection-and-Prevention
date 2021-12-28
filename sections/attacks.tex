@@ -41,19 +41,90 @@ Ettercap ist ein Open-Source-Netzwerk-Traffic-Analysator und -Interceptor. Das u
 Burp ist ein automatisiertes und skalierbares Tool zum Scannen von Sicherheitslücken. Das Tool ist für viele Sicherheitsexperten eine gute Wahl. Im Allgemeinen ermöglicht es den Forschern, Webanwendungen zu testen und Schwachstellen zu identifizieren, die Kriminelle ausnutzen und MITM-Angriffe starten können. Es verwendet einen benutzergesteuerten Workflow, um einen direkten Einblick in die Zielanwendung und deren Funktionsweise zu erhalten. Burp fungiert als Web-Proxy-Server und fungiert als Man-in-the-Middle zwischen dem Webbrowser und den Zielservern. Somit können Sie den Anfrage- und Antwortverkehr abfangen, analysieren und ändern.\cite{ref_url10}\par
 
 \subsection{Vorbereitung für den Angriff}
-Bevor ein Angriff auf Systeme stattfinden kann, müssen sämtliche Inforamtionen zum Netzwerk vorliegen. Wichtig ist auch zu Ermitteln, welche Dienste welche Komponenten und Endpunkte im Netzwerk verwenden. Betriebssysteme und Versionen sind hier für den ersten Einstieg wichtig. Die Vorbereitungsphase auch Pre-Attack genannt ist immer der erste Schritt. 
-... werde hier noch weiter arbeiten 
-Es gibt verschiedene Art wie man einen Netzwerkangriff durchführen kann, aber im voraus werden Vorbereitungen getroffen, damit man bestimmte Informationen über sein Ziel hat und dieses leichter angreifen kann. Drei dieser Methoden zur Informationsbeschaffung heißen Footprinting, Port Scanning und Enumeration.
+Bevor ein Angriff auf Systeme stattfinden kann, müssen sämtliche Informationen zum Netzwerk vorliegen. Wichtig ist auch zu Ermitteln, welche Dienste welche Komponenten und Endpunkte im Netzwerk verwenden. Betriebssysteme und Versionen sind hier für den ersten Einstieg wichtig. Die Vorbereitungsphase auch Pre-Attack genannt ist immer der erste Schritt. Im folgenden werden Methoden vorgestellt.\cite{ref_ieee_attack_9} 
 
-\subsubsection{Footprinting}
+\subsubsection{Footprinting:}
+Footprinting ist das Sammeln von Informationen über ein Zielsystem mit der Absicht erfolgreich ein Cyberangriff durchzuführen. Nun es existieren zwei Arten von Footprinting.\cite{ref_url14} 
+\begin{itemize}
+    \item \textbf{Aktives Footprinting}
+    \begin{itemize}
+        \item Mit aktivem Footprinting werden Informationen über das Zielsystem mit direkter Interaktion gesammelt. Möglicherweise kann das Zielsystem die Informationsbeschaffung erkennen. 
+        \item Zu den Techniken des aktiven Footprinting gehören
+        \begin{itemize}
+            \item Abfrage von DNS Server des Ziels
+            \item Extrahieren von Metadaten von veröffentlichten Daten
+            \item Webseiten Informationen stehlen
+            \item E-Mail Tracking
+            \item Whois-Suche
+            \item Extrahieren von DNS Informaionen
+            \item Social Engineering 
+        \end{itemize}
+    \end{itemize}\bigbreak
+    \item \textbf{Passives Footprinting}
+    \begin{itemize}
+        \item Das Sammeln von Informationen erfolgt ohne direkte Interkation mit dem Zielsystem. Dabei bekommt das Zielsystem von der Informationsbeschaffung nichts mit.
+        \item Zu den Techniken des passiven Footprinting gehören
+        \begin{itemize}
+            \item Top-Level-Domains und Sub-Level-Domains finden
+            \item Durchführung einer Personensuche
+            \item Auffinden durch Webcrawler
+            \item Website-Traffic des Ziels überwachen
+            \item usw.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}\cite{ref_url13}
+\par\bigbreak
+\textbf{Informationen die durch Footprinting herausgefunden werden können:}
+\begin{itemize}
+    \item Betriebssysteme des Zielcomputers\bigbreak
+    \item Firewall\bigbreak
+    \item IP-Adresse\bigbreak
+    \item Netzwerkkarte\bigbreak
+    \item Sicherheitskonfiguration des Zielcomputers\bigbreak
+    \item Email-ID und/oder Passwort\bigbreak
+    \item Server Konfigurationen\bigbreak
+    \item URLs und VPN\bigbreak
+\end{itemize}
+\cite{ref_url14}
 
+\subsubsection{Port-Scanning:}
+Port-Scanning ist eine Methode zum feststellen von Ports in einem Netzwerk. Dabei wird ermittelt welche Ports offen, Daten empfangen und senden könnten. Dabei werden Datenpakete gesendet, empfangen und anschließend analysiert. Anhand dessen können Informationen laufender Dienste auf entsprechenden Hosts ermittelt werden und deren Versionen. Außerdem ist es auch möglich, das Betriebssystem des Zielsystems zu ermitteln. Diese Informationen dienen zur Schwachstellenermittlung. Port-Scanning ist die beliebteste Strategie um nach angreifbaren Servern mit schwachstellen zu suchen. Dadurch können ermittelt werden ob die Firewall der Zielsystems Schwachstellen hat.\cite{ref_url15}\cite{ref_url16}
 
-
-\subsubsection{Port Scanning}
-
-
-
-\subsubsection{Enumeration}
+\subsubsection{Enumeration:}
+Enumeration ist definiert als ein Prozess, des Extrahierens von Benutzernamen, Maschinennamen, Netzwerkressourcen, Freigaben und Diensten aus einem System. Der Angreifer bauht eine aktive Verbindung zum Zielsystem auf und führt gezielt Abfragen durch um mehr Informationen über das Zielsystem zu erhalten. Diese Informationen werden beutzt, um Schwachstellen des Zielsystems zu identifizieren.\cite{ref_url17}
+\begin{itemize}
+    \item \textbf{Arten von Informationen die erimttelt werden können}
+    \begin{itemize}
+        \item Netzwerkressourcen und -freigaben 
+        \item Benutzer und Gruppen 
+        \item Routing-Tabellen 
+        \item Auditing- und Serviceeinstellungen 
+        \item Maschinennamen
+        \item Anwendungen und Banner 
+        \item SNMP- und DNS-Details 
+    \end{itemize}\bigbreak
+    \item \textbf{Techniken für die Aufzählung}
+    \begin{itemize}
+        \item Extrahieren von Benutzernamen mithilfe von E-Mail-IDs
+        \item Extrahieren Sie Informationen mit dem Standardpasswort 
+        \item Brute-Force-Active Directory
+        \item Benutzernamen mit SNMP extrahieren 
+        \item Extrahieren Sie Benutzergruppen aus Windows 
+        \item Extrahieren Sie Informationen mithilfe der DNS-Zonenübertragung
+    \end{itemize}\bigbreak
+    \item \textbf{Dienste und Port zum Aufzählen} 
+    \begin{itemize}
+        \item TCP 53: DNS-Zonenübertragung 
+        \item TCP 135: Microsoft RPC Endpoint Mapper 
+        \item TCP 137: NetBIOS-Namensdienst 
+        \item TCP 139: NetBIOS-Sitzungsdienst (SMB über NetBIOS) 
+        \item TCP 445: SMB über TCP (direkter Host) 
+        \item UDP 161: SNMP 
+        \item TCP/UDP 389: LDAP 
+        \item TCP/UDP 3368: Globaler Katalogdienst 
+        \item TCP 25: Simple Mail Transfer Protocol (SMTP) 
+    \end{itemize}
+\end{itemize}\cite{ref_url17}
 
 \subsection{Man-in-the-Middle-Attacke (MitM-Attacke)}
 Die Kommunikation im Netzwerk zwischen zwei oder mehreren Endpunkten kann durch einen Angreifer gestört werden. Mögliche Störungen sind das Abfangen und/oder Manipulieren von Nachrichten, vortäuschen einer falschen Identität sowie die Unterbrechung der Kommunikation.\cite{ref_book_attack_1} Des Weiteren sind den Opfern der Kommunikation eines Eindringens seitens eines zusätzlich böswilligen Teilhaber nicht bewusst. Anhand  dieser Erkenntnis ist klar das eine MitM-Attacke alle drei Ziele der IT-Sicherheit angreifen kann. \cite{ref_ieee_attack_8}\par
@@ -71,8 +142,8 @@ Ein DNS-Server ordnet die Uniform Resource Locator (URL) auf die zugehörige IP-
 \subsubsection{Angriffsziele:}
 Die meisten Angriffe verfolgen das Ziel sensible Daten zu erlangen, löschen oder die Datenübertragungen zu manipulieren. Ein Denial-of-Service-Angriff (DoS-Angriff) ist ein Angriff auf die Verfügbarkeit eines Systems oder der darauf laufenden Dienstes. Das Ziel ist also ein Ausfall oder eine zeitlich begrenzte Störung des Systems bzw. des darauf laufenden Dienstes hinzuarbeiten. Die Wirkung davon ist, das autorisierte Benutzer des Systems oder des darauf laufenden Dienstes nur eingeschränkt oder auch gar nicht Zugriff haben. DoS-Angriffe können mehrere Absichten verfolgen: 
 \begin{itemize}
-    \item \textbf{Bandbreitensättigung:} Netzwerk oder Netzwerkkomponenten werden überlastet
-    \item \textbf{Ressourcensättigung:} Rechner (z.B. Server) werden überlastet
+    \item \textbf{Bandbreitensättigung:} Netzwerk oder Netzwerkkomponenten werden überlastet\bigbreak
+    \item \textbf{Ressourcensättigung:} Rechner (z.B. Server) werden überlastet\bigbreak
     \item \textbf{Herbeiführen von System- und Anwendungsabstürzen:} Ausnutzung einer Schwachstelle, die zum Absturz führt. Bsp.: Ping of Death
 \end{itemize}\cite{ref_book_attack_2}\par
 
